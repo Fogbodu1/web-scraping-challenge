@@ -38,13 +38,8 @@
     <h2>Featured Mars Image</h2>
     <img src="{{ mars.featured_image_url }}" class="img-fluid" style="max-width:100%; max-height: auto;" alt="Mars Featured Image">
    
-    </div>
+  </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
-      <h2>Current Weather on Mars </h2>
-      <p>{{mars.weather}}</p>
-      <br>
-      <a href="https://twitter.com/marswxreport?lang=en" class="btn btn-primary">Learn More</a>
-      <br>
       <div style="max-width: 450px; max-height: 150px; font-size: 15px; margin-bottom: 65px;"></div>
       <h3>Mars Facts</h3>
       {{ mars.html_table|safe }}
@@ -97,6 +92,5 @@
 </div>
 
 <hr class="light">
-
 </body>
 </html>
