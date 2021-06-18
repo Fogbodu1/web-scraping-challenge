@@ -67,7 +67,7 @@ def scrape():
     df = tables[0]
 
     #Set column names
-    df.columns = ['Description','Value2','Value2']
+    df.columns = ['Description','Mars','Earth']
 
     #Set Description column as the index
     df.set_index('Description', inplace=True)
