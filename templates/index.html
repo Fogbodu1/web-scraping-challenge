@@ -7,6 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    img.img-fluid{
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body>
@@ -50,47 +56,24 @@
 
 <hr>
 <!--- Mars Hemispheres -->
-
-<div class="container-fluid padding">
-  <div class="row wewlcome text-center">
-    <div class="col-12">
-      <h2>Mars Hemispheres</h2>
-    </div>
-    <hr class="light">
-  </div>
-</div>
-</br>
-<!--- Cards -->
-<!--- Adding informational cards-->
-<div class="container-fluid padding">
-  <div class="row padding">
-
 <div class="row">
-  <div class="col-md-6">
-    <div class="card text-center">
-    <img src="{{mars.hemisphere_image_urls[0]['img_url']}}" alt="Mars Hemisphere1" style="max-width:100%; max-height: auto;">
+  <div class="col-md-3 container-fluid">
+    <img src="{{mars.hemisphere_image_urls[0]['img_url']}}" class="img-fluid" alt="">
     <h3>{{mars.hemisphere_image_urls[0]['title']}}</h3>
   </div>
-  <div class="col-md-6">
-    <div class="card text-center">
-    <img src="{{mars.hemisphere_image_urls[1]['img_url']}}" alt="Mars Hemisphere2" style="max-width:100%; max-height: auto;">
+  <div class="col-md-3 container-fluid">
+    <img src="{{mars.hemisphere_image_urls[1]['img_url']}}" class="img-fluid" alt="">
     <h3>{{mars.hemisphere_image_urls[1]['title']}}</h3>
   </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="card text-center">
-    <img src="{{mars.hemisphere_image_urls[2]['img_url']}}" alt="Mars Hemisphere3" style="max-width:100%; max-height: auto;">
+  <div class="col-md-3 container-fluid">
+    <img src="{{mars.hemisphere_image_urls[2]['img_url']}}" class="img-fluid" alt="">
     <h3>{{mars.hemisphere_image_urls[2]['title']}}</h3>
   </div>
-  <div class="col-md-6">
-    <div class="card text-center">
-    <img src="{{mars.hemisphere_image_urls[3]['img_url']}}" alt="Mars Hemisphere4" style="max-width:100%; max-height: auto;">
+  <div class="col-md-3 container-fluid">
+    <img src="{{mars.hemisphere_image_urls[3]['img_url']}}" class="img-fluid" alt="">
     <h3>{{mars.hemisphere_image_urls[3]['title']}}</h3>
   </div>
 </div>
 
-<hr class="light">
 </body>
 </html>
