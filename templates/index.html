@@ -23,6 +23,7 @@
     <div class="row">
       <div class="col-md-12">
         <h2>Latest Mars News</h2>
+        <h4>{{ mars.news_date }}</h4>
         <h4>{{ mars.news_title }}</h4>
         <p>{{ mars.news_p }}</p>
       </div>
@@ -35,8 +36,8 @@
   <div class="row padding">
     <div class="col-lg-8 col-md-8 col-sm-12">
     <h2>Featured Mars Image</h2>
-    <img src="{{ mars.featured_img_link }}" class="img-fluid" style="max-width:100%; max-height: auto;" alt="Mars Featured Image">
-
+    <img src="{{ mars.featured_image_url }}" class="img-fluid" style="max-width:100%; max-height: auto;" alt="Mars Featured Image">
+   
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
       <h2>Current Weather on Mars </h2>
@@ -46,7 +47,7 @@
       <br>
       <div style="max-width: 450px; max-height: 150px; font-size: 15px; margin-bottom: 65px;"></div>
       <h3>Mars Facts</h3>
-      {{ mars.facts|safe }}
+      {{ mars.html_table|safe }}
       </div>
     </div>
   </div>
@@ -72,7 +73,7 @@
    {% for mars_img in mars.hemi_img %}
     <div class="col-md-6">
       <div class="card text-center">
-        <img class="card-img-top" src="{{ mars_img.img_url }}" style="max-width:100%; max-height: auto;">
+        <img class="card-img-top" src="{{ mars_img.hemisphere_image_urls }}" style="max-width:100%; max-height: auto;">
         <div class="card-body">
           <h4 class="card-title">{{mars_img.title}}</h4>
         </div>
